@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario Educativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cuestionario Educativo</h1>
+        <form id="educationalSurvey" onsubmit="return submitForm()">
+            <div class="form-group">
+                <label>¿Cuándo consideras un buen momento para el uso de tecnologías y sus derivaciones en escuelas?</label>
+                <label><input type="checkbox" name="technologyUse" value="Antes del inicio de clases"> Antes del inicio de clases</label>
+                <label><input type="checkbox" name="technologyUse" value="Durante el año escolar"> Durante el año escolar</label>
+                <label><input type="checkbox" name="technologyUse" value="Después de las clases"> Después de las clases</label>
+                <label><input type="checkbox" name="technologyUse" value="En actividades extracurriculares"> En actividades extracurriculares</label>
+            </div>
+
+            <div class="form-group">
+                <label>¿En qué consiste tu método de estudio?</label>
+                <label><input type="checkbox" name="studyMethod" value="Lectura"> Lectura</label>
+                <label><input type="checkbox" name="studyMethod" value="Práctica"> Práctica</label>
+                <label><input type="checkbox" name="studyMethod" value="Discusión en grupo"> Discusión en grupo</label>
+                <label><input type="checkbox" name="studyMethod" value="Uso de recursos digitales"> Uso de recursos digitales</label>
+            </div>
+
+            <div class="form-group">
+                <label>¿Qué consideras que actualmente haya que trabajar más?</label>
+                <label><input type="checkbox" name="currentFocus" value="Soft Skills"> Soft Skills</label>
+                <label><input type="checkbox" name="currentFocus" value="Hard Skills"> Hard Skills</label>
+                <label><input type="checkbox" name="currentFocus" value="Creatividad"> Creatividad</label>
+                <label><input type="checkbox" name="currentFocus" value="Trabajo en equipo"> Trabajo en equipo</label>
+            </div>
+
+            <div class="form-group">
+                <label>¿Qué factores del sistema educativo opinas que necesitan una mejora?</label>
+                <label><input type="checkbox" name="educationFactors" value="Currículo"> Currículo</label>
+                <label><input type="checkbox" name="educationFactors" value="Infraestructura"> Infraestructura</label>
+                <label><input type="checkbox" name="educationFactors" value="Capacitación de docentes"> Capacitación de docentes</label>
+                <label><input type="checkbox" name="educationFactors" value="Recursos tecnológicos"> Recursos tecnológicos</label>
+            </div>
+
+            <div class="form-group">
+                <label>¿Qué tanta importancia le das a la educación en tu vida?</label>
+                <label><input type="radio" name="educationImportance" value="Esencial" required> Esencial</label>
+                <label><input type="radio" name="educationImportance" value="Importante"> Importante</label>
+                <label><input type="radio" name="educationImportance" value="Moderada"> Moderada</label>
+                <label><input type="radio" name="educationImportance" value="Poca"> Poca</label>
+            </div>
+
+            <div class="form-group">
+                <label>¿Cuál es tu edad?</label>
+                <label><input type="radio" name="age" value="Menos de 18 años" required> Menos de 18 años</label>
+                <label><input type="radio" name="age" value="18-24 años"> 18-24 años</label>
+                <label><input type="radio" name="age" value="25-34 años"> 25-34 años</label>
+                <label><input type="radio" name="age" value="35 años o más"> 35 años o más</label>
+            </div>
+
+            <div class="form-group">
+                <label>¿Qué tienes en cuenta a la hora de elegir una institución educativa?</label>
+                <label><input type="checkbox" name="institutionChoice" value="Calidad académica"> Calidad académica</label>
+                <label><input type="checkbox" name="institutionChoice" value="Ubicación"> Ubicación</label>
+                <label><input type="checkbox" name="institutionChoice" value="Costos"> Costos</label>
+                <label><input type="checkbox" name="institutionChoice" value="Opiniones de otros estudiantes"> Opiniones de otros estudiantes</label>
+            </div>
+
+            <div class="form-group">
+                <label>¿Hay edad para estudiar?</label>
+                <label><input type="radio" name="ageLimit" value="Sí" required> Sí</label>
+                <label><input type="radio" name="ageLimit" value="No"> No</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Redirigir a la página de felicitación después del envío del formulario
+            window.location.href = 'cake.html';
+            return false; // Previene el envío real del formulario para pruebas
+        }
+    </script>
+</body>
+</html>
