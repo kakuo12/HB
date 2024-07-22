@@ -39,8 +39,11 @@ body {
   display: none;
 }
 
-/* Estilo para el mensaje de cumpleaños */
-#birthdayMessage {
+.show {
+  display: block;
+}
+
+#placeCandlesMessage, #blowCandlesMessage, #birthdayMessage {
   position: fixed;
   top: 30%;
   left: 50%;
@@ -58,11 +61,11 @@ body {
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-/* Animación de aparición */
-#birthdayMessage.show {
+#placeCandlesMessage.show, #blowCandlesMessage.show, #birthdayMessage.show {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.1);
 }
+
 
 
 .plate {
